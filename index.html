@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Health Chatbot</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">YourLogo</a>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Unicode hamburger icon -->
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav-links">
+            <li class="links"><a href="#">Home</a></li>
+            <li class="links"><a href="chatbot.html" target="_blank">Chatbot</a></li>
+
+            <!-- Dropdown: Health Info (kept as is) -->
+            <li class="dropdown">
+                <a href="#" id="dropbtn">Health Info
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#">Symptoms</a>
+                    <a href="#">Diseases</a>
+                    <a href="#">Prevention</a>
+                </div>
+            </li>
+
+            <!-- Google Translate -->
+            <li id="google_translate_element"></li>
+
+            <li><a href="#" id="sign-in">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Left Side -->
+            <div class="hero-left">
+                <h1>AI-Driven Public Health <br>Awareness Chatbot</h1>
+                <p class="subtitle">
+                    Maharshi – Your trusted AI-driven health assistant for preventive care, disease awareness,
+                    vaccination guidance, and reliable health alerts. Helping communities make informed healthcare
+                    decisions anytime, anywhere.
+                </p>
+                <p class="indicator">⚡ Powered by Advanced AI & Government Health Data</p>
+
+                <!-- USP Text -->
+                <div class="usp-list">
+                    <div id="usp-list-1">
+                        <p>✅ 80%+ Accuracy in Health Queries</p>
+                        <p>📡 Real-time Outbreak Monitoring</p>
+                    </div>
+                    <div id="usp-list-2">
+                        <p>🌐 Multilingual Support</p>
+                        <p>📊 Government Database Integration</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="hero-right">
+                <img src="health.png" alt="Healthcare AI" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Services Section -->
+    <section class="features-section">
+        <h2>Features / Services</h2>
+        <p>Explore the key services provided by our health chatbot to make healthcare more accessible.</p>
+
+        <div class="features-grid">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <h3>🤖 Chatbot</h3>
+                <p>Get instant responses to your health queries in local languages with our AI-powered chatbot.</p>
+                <a href="chatbot.html" target="_blank"><button>Try Chatbot</button></a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <h3>💉 Vaccination</h3>
+                <p>Stay updated on vaccination schedules and find the nearest vaccination centers easily.</p>
+                <button>Find Centers</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <h3>🩺 Diseases</h3>
+                <p>Access detailed information on common diseases, symptoms, and preventive measures.</p>
+                <button>Learn More</button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="feature-card">
+                <h3>⚠️ Alerts</h3>
+                <p>Receive timely alerts on health emergencies, disease outbreaks, and public health news.</p>
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Impact & Research-->
+    <section class="impact-section">
+        <h2>Impact & Reach</h2>
+        <p>Measuring our success in improving public health awareness and accessibility across rural and semi-urban
+            communities.</p>
+
+        <div class="impact-cards">
+            <div class="impact-card">
+                <h3>50,000+</h3>
+                <p>Rural Families Reached</p>
+            </div>
+
+            <div class="impact-card">
+                <h3>200K+</h3>
+                <p>Health Queries Answered</p>
+            </div>
+
+            <div class="impact-card">
+                <h3>35%</h3>
+                <p>Increase in Preventive Care Awareness</p>
+            </div>
+
+            <div class="impact-card">
+                <h3>80%+</h3>
+                <p>Accuracy in Local Language Queries</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Find Hospitals & Vaccination Centers-->
+    <section class="hospital-section">
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Find Nearest Hospital/Doctor</h2>
+            <p>Get instant access to verified doctors and hospitals near you.</p>
+
+            <!-- Cards -->
+            <div class="card">
+                <h3>Find Doctor</h3>
+                <p>Search for qualified doctors near you based on specialty and availability.</p>
+                <button class="btn">Find Doctor</button>
+            </div>
+
+            <div class="card">
+                <h3>Find Hospitals</h3>
+                <p>Locate nearby hospitals, clinics, or vaccination centers instantly.</p>
+                <button class="btn">Find Nearest Hospital</button>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609891863!2d72.74110131778608!3d23.02049777345708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e849b1f0b4a5b%3A0xb1f6b0d80bd0488b!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1694062547155!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Left Side: Chatbot Info -->
+            <div class="footer-about">
+                <h3>🤖 Maharshi</h3>
+                <p>Empowering communities with AI-driven health awareness,
+                    preventive care, and real-time medical guidance.</p>
+            </div>
+
+            <!-- First Column: Platforms -->
+            <div class="footer-column">
+                <h4>Platforms</h4>
+                <ul>
+                    <li><a href="#">WhatsApp Integration</a></li>
+                    <li><a href="#">SMS Integration</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                </ul>
+            </div>
+
+            <!-- Second Column: Services -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Symptom Checker</a></li>
+                    <li><a href="#">Disease Prevention</a></li>
+                    <li><a href="#">Nearest Hospital/Doctors</a></li>
+                    <li><a href="#">Book Appointments</a></li>
+                </ul>
+            </div>
+
+            <!-- Third Column: Support -->
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2025 Maharshi Health Assistant. Empowering public health through technology.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menu-toggle");
+            const navLinks = document.getElementById("nav-links");
+
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
